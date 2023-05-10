@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
-import MovieItem from './MovieItem';
+import MovieCard from './MovieCard';
 
 function Home() {
 
@@ -20,16 +20,16 @@ function Home() {
 
 
     return (
-        <div style={{ 'backgroundImage': 'linear-gradient(to right top, #1b4076, #006290, #008088, #009a64, #88aa3c)' }}>
-            <div className="py-5" style={{ padding: '80px' }}>
+        <div style={{ 'backgroundImage': 'linear-gradient(to bottom, #3e344b, #533541, #593c37, #554734, #4a523d)' }}>
+            <div className="py-5" style={{ padding: '70px' }}>
                 <div className="row">
                     { articles.map((element, idx) => {
                         return <div className="col-md-4" key={idx}>
-                            {/* <p> {element.show.name} </p>
+                            {/*
                             <p> {element.show.genres} </p>
                             <p> {element.score}</p>
                             <p> {element.show.summary} </p> */}
-                            <MovieItem name={element.show.name} 
+                            <MovieCard name={element.show.name} 
                                 show={element.show} 
                                 datee={element.show.premiered}
                                 imageUrl={element.show.image}

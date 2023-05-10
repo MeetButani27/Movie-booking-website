@@ -8,15 +8,18 @@ function Navbar() {
           <div className="container-fluid">
             <Link className="navbar-brand ps-3 me-5" to="/">Movie Booking System</Link>
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li className="nav-item me-2"><Link className="nav-link active" aria-current="page" to="/">Home</Link></li>
-                    <li className="nav-item me-2"><Link className="nav-link" to="/">Business</Link></li>
-                    <li className="nav-item me-2"><Link className="nav-link" to="/">Entertainment</Link></li>
-                    <li className="nav-item me-2"><Link className="nav-link" to="/">General</Link></li>
+                  <li className="nav-item me-2"><Link className="nav-link active" aria-current="page" to="/home">Home</Link></li>
+                  <li className="nav-item me-2"><Link className="nav-link" to="/trending">Trending</Link></li>
                 </ul>
+                <form className="d-flex" role="search">
+                  <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                  <button className="btn btn-success mx-2 px-3" type="submit" >Login</button>
+                  <button className="btn btn-primary mx-2 px-3" type="submit" >SignUp</button>
+                </form>
             </div>
           </div>
       </nav>
