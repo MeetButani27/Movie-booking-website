@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import MovieCard from './MovieCard';
+import Carousel from './Carousel';
 import Footer from './Footer';
 
 function Home() {
@@ -22,8 +23,10 @@ function Home() {
 
     return (
         <div style={{ 'backgroundColor': '#196b85' }}>
-            <div className="text-center py-3" style={{ backgroundColor: '#0c1261' }}>
-                <h2 style={{ color: 'wheat' }}>Top-10 Trending movies</h2>
+            <Carousel />
+
+            <div className="text-center py-3" style={{ backgroundColor: '#04061f', borderTop: '2px solid gray' }}>
+                <h2 style={{ color: 'wheat' }}>Our exciting Movie collection</h2>
             </div>
             <div className="py-4" style={{ padding: '70px' }}>
                 <div className="row">

@@ -20,7 +20,7 @@ function MovieItem() {
                 <div className='container p-5' style={{ display: 'flex', 'backgroundColor': '#E5E7E8' }}>
                     <div style={{ width:'85%', position: 'relative'}}>
                         <div style={{display: 'flex', justifyContent: 'flex-end', position: 'absolute', right:'10px', top:'10px'}}>
-                            <span className="badge rounded-pill bg-danger py-2 px-4" style={{ fontSize: '14px' }}> {data.show.language} </span>
+                            <span className="badge rounded-pill bg-danger py-2 px-4" style={{ fontSize: '16px' }}> {data.show.language} </span>
                         </div>
                         <img src={imageUrl ? imageUrl.original: "https://media.istockphoto.com/id/931643150/vector/picture-icon.jpg?s=612x612&w=0&k=20&c=St-gpRn58eIa8EDAHpn_yO4CZZAnGD6wKpln9l3Z3Ok="} className="card-img-top" alt="..." width="240px" height="500px" />
                     </div>

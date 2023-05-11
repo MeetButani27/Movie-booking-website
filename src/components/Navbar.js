@@ -14,6 +14,7 @@ function Navbar() {
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                   <li className="nav-item me-2"><Link className="nav-link active" aria-current="page" to="/home">Home</Link></li>
                   <li className="nav-item me-2"><Link className="nav-link" to="/trending">Trending</Link></li>
+                  <li className="nav-item me-2"><Link className="nav-link" to="/">Categories</Link></li>
                 </ul>
                 <form className="d-flex" role="search">
                   <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
