@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState, useEffect } from 'react';
 import MovieCard from './MovieCard';
+import Footer from './Footer';
 
 function Home() {
 
@@ -20,15 +21,14 @@ function Home() {
 
 
     return (
-        <div style={{ 'backgroundImage': 'linear-gradient(to bottom, #3e344b, #533541, #593c37, #554734, #4a523d)' }}>
-            <div className="py-5" style={{ padding: '70px' }}>
+        <div style={{ 'backgroundColor': '#196b85' }}>
+            <div className="text-center py-3" style={{ backgroundColor: '#0c1261' }}>
+                <h2 style={{ color: 'wheat' }}>Top-10 Trending movies</h2>
+            </div>
+            <div className="py-4" style={{ padding: '70px' }}>
                 <div className="row">
                     { articles.map((element, idx) => {
                         return <div className="col-md-4" key={idx}>
-                            {/*
-                            <p> {element.show.genres} </p>
-                            <p> {element.score}</p>
-                            <p> {element.show.summary} </p> */}
                             <MovieCard name={element.show.name} 
                                 show={element.show} 
                                 datee={element.show.premiered}
@@ -38,6 +38,8 @@ function Home() {
                     })}
                 </div>
             </div>
+
+            <Footer />
         </div>
     )
 }

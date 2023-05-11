@@ -16,9 +16,9 @@ function MovieCard(props) {
                     <span className="badge rounded-pill bg-danger py-2 px-4"> {show.language} </span>
                 </div>
 
-                <img src={imageUrl ? imageUrl.original: "https://moz.com/images/cms/6042b901d424f8.96940036_2021-04-15-230656.png?w=1200&h=630&q=82&auto=format&fit=crop&dm=1618528016&s=b298c4d810e8e8ad23b1fc18e845f64e"} className="card-img-top" alt="..." height="500px" />
+                <img src={imageUrl ? imageUrl.original: "https://media.istockphoto.com/id/931643150/vector/picture-icon.jpg?s=612x612&w=0&k=20&c=St-gpRn58eIa8EDAHpn_yO4CZZAnGD6wKpln9l3Z3Ok="} className="card-img-top" alt="..." height="500px" />
                 
-                <div className="card-body" style={{ height: '200px' }}>
+                <div className="card-body" style={{ height: '205px', backgroundColor: '#E5E7E8' }}>
                     <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                         <h5 className="card-title" style={{ fontSize: '25px' }}>{ name }</h5>
                         <span style={{ 'fontSize': '17px'}}> ({show.type}) </span>
